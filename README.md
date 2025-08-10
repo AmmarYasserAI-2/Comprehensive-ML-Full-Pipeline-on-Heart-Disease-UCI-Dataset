@@ -1,47 +1,47 @@
 # Comprehensive ML Pipeline on Heart Disease UCI Dataset
 
+This project was built as part of the **Sprints x Microsoft Summer Camp**, focusing on real-world machine learning pipelines, model deployment, and interactive UI development using the Heart Disease UCI dataset.
+
+---
+
 ## Project Overview
-This project implements a comprehensive machine learning pipeline for the Heart Disease UCI dataset. It includes data preprocessing, feature selection, dimensionality reduction, supervised and unsupervised learning, hyperparameter tuning, and model deployment.
 
-## Instructions
+This repo implements a full machine learning workflow on the Heart Disease UCI dataset, including:
 
-### 1. Environment Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/AmmarYasserAI-2/Comprehensive-ML-Full-Pipeline-on-Heart-Disease-UCI-Dataset.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd Comprehensive-ML-Full-Pipeline-on-Heart-Disease-UCI-Dataset
-   ```
-3. Install the required Python packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
+- Data preprocessing & cleaning (handling missing values, encoding, scaling)  
+- Dimensionality reduction with PCA  
+- Feature selection using statistical and ML-based methods  
+- Supervised learning with Logistic Regression, Decision Trees, Random Forest, and SVM  
+- Unsupervised learning via K-Means and Hierarchical Clustering  
+- Hyperparameter tuning using GridSearchCV and RandomizedSearchCV  
+- Model export and pipeline saving for reproducibility  
+- **Bonus:** Streamlit UI for real-time predictions  
+- **Bonus:** Deployment with Ngrok for public access  
 
-### 2. Running the Notebooks
-1. Open Jupyter Notebook:
-   ```bash
-   jupyter notebook
-   ```
-2. Navigate to the `notebooks` folder and execute the notebooks in sequence:
-   - `01_data_preprocessing.ipynb`
-   - `02_pca_analysis.ipynb`
-   - `03_feature_selection.ipynb`
-   - `04_supervised_learning.ipynb`
-   - `05_unsupervised_learning.ipynb`
-   - `06_hyperparameter_tuning.ipynb`
+---
 
-### 3. Model Deployment
-1. Run the `ui/app.py` file to start the interactive UI:
-   ```bash
-   python ui/app.py
-   ```
+## Folder Structure
 
-## Deliverables
-- **Preprocessed Data**: Available in the `data` folder.
-- **Trained Models**: Saved in the `models` folder.
-- **Evaluation Metrics**: Available in the `results/evaluation_metrics.txt`.
+- `data/` — cleaned datasets ready for modeling  
+- `models/` — saved trained models (.pkl files)  
+- `notebooks/` — step-by-step Jupyter notebooks for each phase:  
+  - `01_data_preprocessing.ipynb`  
+  - `02_pca_analysis.ipynb`  
+  - `03_feature_selection.ipynb`  
+  - `04_supervised_learning.ipynb`  
+  - `05_unsupervised_learning.ipynb`  
+  - `06_hyperparameter_tuning.ipynb`  
+- `results/` — evaluation metrics and plots  
 
-## Contact
-For any questions, please contact [Ammar Yasser](mailto:example@example.com).
+---
+
+
+## Key Features
+
+* **Robust data cleaning and EDA** to understand and prepare the dataset
+* **Dimensionality reduction with PCA** to focus on most important features
+* **Feature selection combining model-based and statistical methods** for better performance
+* **Supervised classification models** with thorough evaluation metrics (accuracy, precision, recall, F1-score, ROC-AUC)
+* **Unsupervised clustering** with K-Means and Hierarchical methods, including elbow method and dendrogram visualization
+* **Hyperparameter tuning** with GridSearchCV and RandomizedSearchCV to squeeze out best model performance
+* **Model export** with `.pkl` files including preprocessing pipelines for reproducibility
