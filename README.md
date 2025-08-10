@@ -4,6 +4,16 @@ This project was built as part of the **Sprints x Microsoft Summer Camp**, focus
 
 ---
 
+## Project Images
+
+Below are some images generated during the project:
+
+![Elbow Method Plot](images/elbowput.png)
+![Output Image](images/output.png)
+![Output Image 1](images/output1.png)
+![Output Image 3](images/output3.png)
+
+
 ## Project Overview
 
 This repo implements a full machine learning workflow on the Heart Disease UCI dataset, including:
@@ -45,3 +55,4 @@ This repo implements a full machine learning workflow on the Heart Disease UCI d
 * **Unsupervised clustering** with K-Means and Hierarchical methods, including elbow method and dendrogram visualization
 * **Hyperparameter tuning** with GridSearchCV and RandomizedSearchCV to squeeze out best model performance
 * **Model export** with `.pkl` files including preprocessing pipelines for reproducibility
+
